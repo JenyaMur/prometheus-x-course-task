@@ -13,7 +13,7 @@ const[select, setSelect] = useState('1');
 const [search, setSearch] = useState(" ");
 
 useEffect(() => {
-    ky.get('./books.json')
+    ky.get('/prometheus-x-course-task/books.json')
       .json().then((resp) => addBooks(resp.books))
       .catch(e=>console.log(e))
 // eslint-disable-next-line react-hooks/exhaustive-deps
