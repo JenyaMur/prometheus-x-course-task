@@ -1,0 +1,33 @@
+.itemCartAmount
+  display: flex
+  justify-content: space-between
+  > div
+    flex: 1 0 auto 
+    display: flex
+    justify-content: space-between
+
+  button
+    border: none
+    background: none
+    color: green
+    &:disabled
+      color: grey
+
+.trashIcon
+  color: brown
+  &:hover
+    color: red
+
+.cartItemRow
+  height: 40px
+  align-items: center
+  background: whitesmoke
+  border-bottom: 1px dashed #6d757d
+
+.div-input
+  background: #e3e3e3
+
+@media (max-width: 575px)
+  .cartItemRow
+    height: 60px
+
