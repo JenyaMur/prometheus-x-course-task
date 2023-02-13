@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/prometheus-x-course-task/static/css/main.868f69d5.css",
-    "main.js": "/prometheus-x-course-task/static/js/main.8ecf6f17.js",
-    "static/js/787.28cb0dcd.chunk.js": "/prometheus-x-course-task/static/js/787.28cb0dcd.chunk.js",
-    "static/media/error.png": "/prometheus-x-course-task/static/media/error.b7405ededce144083c94.png",
-    "static/media/avatar2.png": "/prometheus-x-course-task/static/media/avatar2.0dc15d36ad164b6d1d63.png",
-    "static/media/avatar3.png": "/prometheus-x-course-task/static/media/avatar3.945d86b64500af7dc49d.png",
-    "static/media/avatar1.jpg": "/prometheus-x-course-task/static/media/avatar1.2eb9cf1885c30a519835.jpg",
-    "static/media/avatar4.jpg": "/prometheus-x-course-task/static/media/avatar4.6c48fa2009850931fcf8.jpg",
-    "static/media/avatar.png": "/prometheus-x-course-task/static/media/avatar.0d14c6999b4a5c8e86a7.png",
-    "static/media/imageNotFound.png": "/prometheus-x-course-task/static/media/imageNotFound.298b98203c3825c61303.png",
-    "static/media/cart.svg": "/prometheus-x-course-task/static/media/cart.5a1c3c755c07e59db7d65be6bc8d8bfb.svg",
-    "index.html": "/prometheus-x-course-task/index.html",
-    "main.868f69d5.css.map": "/prometheus-x-course-task/static/css/main.868f69d5.css.map",
-    "main.8ecf6f17.js.map": "/prometheus-x-course-task/static/js/main.8ecf6f17.js.map",
-    "787.28cb0dcd.chunk.js.map": "/prometheus-x-course-task/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/static/css/main.868f69d5.css",
+    "main.js": "/static/js/main.2b7c0e30.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/error.png": "/static/media/error.b7405ededce144083c94.png",
+    "static/media/avatar2.png": "/static/media/avatar2.0dc15d36ad164b6d1d63.png",
+    "static/media/avatar3.png": "/static/media/avatar3.945d86b64500af7dc49d.png",
+    "static/media/avatar1.jpg": "/static/media/avatar1.2eb9cf1885c30a519835.jpg",
+    "static/media/avatar4.jpg": "/static/media/avatar4.6c48fa2009850931fcf8.jpg",
+    "static/media/avatar.png": "/static/media/avatar.0d14c6999b4a5c8e86a7.png",
+    "static/media/imageNotFound.png": "/static/media/imageNotFound.298b98203c3825c61303.png",
+    "static/media/cart.svg": "/static/media/cart.5a1c3c755c07e59db7d65be6bc8d8bfb.svg",
+    "index.html": "/index.html",
+    "main.868f69d5.css.map": "/static/css/main.868f69d5.css.map",
+    "main.2b7c0e30.js.map": "/static/js/main.2b7c0e30.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.868f69d5.css",
-    "static/js/main.8ecf6f17.js"
+    "static/js/main.2b7c0e30.js"
   ]
 }
