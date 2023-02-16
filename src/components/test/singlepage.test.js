@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import BookPriceData from '../book-price-data/bookPriceData';
+import BookPriceData from '../book-price-data/BookPriceData';
 import { PurchaseProvider } from '../../hoc/PurchaseProvider';
 import userEvent from '@testing-library/user-event';
 
