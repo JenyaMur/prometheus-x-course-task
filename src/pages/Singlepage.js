@@ -1,6 +1,5 @@
-import React from "react";
 import { useParams } from "react-router-dom";
-import BookPriceData from "../components/book-price-data/bookPriceData";
+import BookPriceData from "../components/book-price-data/BookPriceData";
 import useBooks from "../hook/useBooks";
 import Notfoundpage from "./Notfoundpage";
 import './singlepage.sass';

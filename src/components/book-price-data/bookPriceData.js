@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import usePurchase from "../../hook/usePurchase";
 import './bookPriceData.sass';
 import { faCircleMinus, faCirclePlus } from "@fortawesome/free-solid-svg-icons";

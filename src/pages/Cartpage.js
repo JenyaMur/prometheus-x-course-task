@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import usePurchase from '../hook/usePurchase';
 import img from '../img/cart.svg'
-import NavMenu from "../components/nav-menu/navMenu";
+import NavMenu from "../components/nav-menu/NavMenu";
 import './Cartpage.sass';
-import CartItem from "../components/cart-item/cartItem";
+import CartItem from "../components/cart-item/CartItem";
 
 export default function Cartpage() {
     const [flag, setFlag] = useState("DELETE");
@@ -17,7 +17,7 @@ export default function Cartpage() {
         deletePurchase();
     }
     const hideModal = (e) => {
-        if (e.target.className === "modal" || e.target.className === "modal__close" ) {
+        if (e.target.className === "modal" || e.target.className === "modal-close" ) {
             setShowBlock(false);
         }
     }
@@ -63,11 +63,11 @@ export default function Cartpage() {
             </div>
             { showBlock && 
                 <div className="modal" onClick={hideModal}>
-                    <div className="modal__dialog">
-                        <div className="modal__content">
+                    <div className="modal-dialog">
+                        <div className="modal-content">
                         {!message && <form onSubmit={sendOrder}>
-                            <div className="modal__close">&times;</div>
-                            <div className="modal__title">
+                            <div className="modal-close">&times;</div>
+                            <div className="modal-title">
                                 we are waiting for your data
                             </div>
                             <input
@@ -75,7 +75,7 @@ export default function Cartpage() {
                             placeholder="Your email..."
                             name="email"
                             type="email"
-                            className="modal__input"
+                            className="modal-input"
                             autoFocus
                             />
                             <button type="submit" className="btn btn-secondary">Finish order</button>

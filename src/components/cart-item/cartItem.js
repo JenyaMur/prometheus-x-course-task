@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {Link} from 'react-router-dom';
 import { faTrash, faCircleMinus, faCirclePlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -45,9 +45,9 @@ export default function CartItem({item, toggle, setToggle}) {
     }
 
     return (
-        <div className="row cartItemRow">
-            <div className="col-12 col-sm-6 itemCartTitle">{item.name}</div>
-            <div className="col-12 col-sm-6 itemCartAmount">
+        <div className="row cart-item-row">
+            <div className="col-12 col-sm-6">{item.name}</div>
+            <div className="col-12 col-sm-6 item-cart-amount">
                 <div>
                     <button onClick={minusAmount} disabled={value <= 1 ? true : false}><FontAwesomeIcon icon={faCircleMinus} /></button>
                     <span>{value}</span>
@@ -55,7 +55,7 @@ export default function CartItem({item, toggle, setToggle}) {
                 </div>
                 <div>
                     <span>{(item.price*value).toFixed(2)} $</span>
-                    <Link to="#" onClick={removeItem} className="trashIcon"><FontAwesomeIcon icon={faTrash} /></Link>
+                    <Link to="#" onClick={removeItem} className="trash-icon"><FontAwesomeIcon icon={faTrash} /></Link>
                 </div>    
             </div>
         </div>

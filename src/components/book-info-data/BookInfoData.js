@@ -1,5 +1,4 @@
-import React from "react";
-import NavMenu from "../nav-menu/navMenu";
+import NavMenu from "../nav-menu/NavMenu";
 import img from '../../img/imageNotFound.png';
 
 export default function BookInfoData({image, title, author, shortDescription, description, children}) {

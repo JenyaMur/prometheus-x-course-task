@@ -1,4 +1,3 @@
-import React from "react";
 import { useAuth } from "../../hook/useAuth";
 import { useNavigate, Link } from "react-router-dom";
 import cart from '../../img/cart.svg'

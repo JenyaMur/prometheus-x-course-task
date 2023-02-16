@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function SelectForm({cb}) {
 
     function priceFilter(e) {

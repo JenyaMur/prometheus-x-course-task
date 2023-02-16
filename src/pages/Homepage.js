@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import ky from 'ky';
 import BookElement from "../components/bookItem/BookElement";
-import Search from "../components/search/search";
-import SelectForm from "../components/selectForm/selectForm";
+import Search from "../components/search/Search";
+import SelectForm from "../components/selectForm/SelectForm";
 import useBooks from '../hook/useBooks';
 import './Homepage.sass';
 
