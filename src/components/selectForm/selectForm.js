@@ -7,8 +7,8 @@ export default function SelectForm({cb}) {
     return (
         <form>
             <select name="price-select" className="form-select" onChange={priceFilter}>
-                <option defaultValue hidden>Price:</option>
-                <option value="1">All</option>
+                {/* <option defaultValue hidden disabled>Price:</option> */}
+                <option value="1">Price: all</option>
                 <option value="2">less than 15</option>
                 <option value="3">15 - 30</option>
                 <option value="4">more than 30</option>
