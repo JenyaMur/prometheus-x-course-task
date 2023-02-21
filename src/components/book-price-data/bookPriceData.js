@@ -102,7 +102,6 @@ export default function BookPriceData({price, title, id, amount}) {
                 addToCart(e);
               }}}
           />
-            <span hidden data-testid="count-book">{`${value} book`}</span>
             <button onClick={addValue} data-testid="add-book" disabled={value >= 42 ? true : false} className="correctBookValue">
               <FontAwesomeIcon icon={faCirclePlus} />
             </button>

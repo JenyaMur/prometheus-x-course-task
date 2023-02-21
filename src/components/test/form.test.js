@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import BookPriceData from '../book-price-data/BookPriceData';
 import { PurchaseProvider } from '../../hoc/PurchaseProvider';
 import userEvent from '@testing-library/user-event';
@@ -13,26 +13,26 @@ describe("testing form", () => {
       expect(screen.getByTestId('form-component')).toBeInTheDocument();
     });
 
-    it('check add count +1. Start value is 1, after fireEvent should be 2', () => {
+    it('check add count +1. Start value is 1, after userEvent should be 2', () => {
     render(
         <PurchaseProvider>
             <BookPriceData />
         </PurchaseProvider>
         );
     const button = screen.getByTestId('add-book');
-    fireEvent.click(button);
-    expect(screen.getByText(/2 book/i)).toBeInTheDocument();
+    userEvent.click(button);
+    expect(screen.getByDisplayValue(/2/i)).toBeInTheDocument();
     });
 
-    it('check minus count -1. Start value is 1, after fireEvent should be 0', () => {
+    it('check minus count -1. Start value is 1, after userEvent should be 0', () => {
     render(
         <PurchaseProvider>
             <BookPriceData />
         </PurchaseProvider>
         );
     const buttonMinus = screen.getByTestId('minus-book')
-    fireEvent.click(buttonMinus);
-    expect(screen.getByText(/0 book/i)).toBeInTheDocument();
+    userEvent.click(buttonMinus);
+    expect(screen.getByDisplayValue(/0/i)).toBeInTheDocument();
     });
 
     it('check changing totalPrice. Start price is 5.01, after adding 10 books should be 50.10', () => {
@@ -46,6 +46,5 @@ describe("testing form", () => {
     userEvent.type(input, '10');
     expect(screen.getByText(/50.10 \$/i)).toBeInTheDocument()
     });
-
 });
 
