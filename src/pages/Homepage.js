@@ -21,6 +21,20 @@ useEffect(() => {
 
 localStorage.setItem('books', JSON.stringify(books));
 
+    let userSearch;
+    if(select === "1") {
+        userSearch = books.filter(book => book.title.toLowerCase().includes(search.toLowerCase().trim()));
+    }
+    if(select === "2") {
+        userSearch = books.filter(book => book.title.toLowerCase().includes(search.toLowerCase().trim()) && book.price < 15);
+    }
+    else if(select === "3") {
+        userSearch = books.filter(book => book.title.toLowerCase().includes(search.toLowerCase().trim()) && book.price >= 15 && book.price <= 30);
+    }
+    else if(select === "4") {
+        userSearch = books.filter(book => book.title.toLowerCase().includes(search.toLowerCase().trim()) && book.price > 30);
+    }
+
 return (
      <div>
         <div className="search-filter-row">
@@ -29,25 +43,10 @@ return (
         </div>
         <div className="row justify-content-evenly mb-3">
         {   
-            // eslint-disable-next-line array-callback-return
-            books.map(book => {
-                const bookEl = <BookElement id={book.id} author={book.author} price={book.price} image={book.image} title={book.title} key={book.id}/>;
-                if(book.title.toLowerCase().includes(search.toLowerCase().trim())) {
-                    if(select === "1") {
-                        return bookEl
-                    } 
-                    if(select === "2" && book.price < 15) {
-                        return bookEl
-                    }
-                    if(select === "3" && book.price >= 15 && book.price <= 30) {
-                        return bookEl
-                    } 
-                    if(select === "4" && book.price > 30) {
-                        return bookEl
-                    }  
-                 } 
-            }  
-            ) 
+            userSearch.map(book => <BookElement id={book.id} author={book.author} price={book.price} image={book.image} title={book.title} key={book.id}/> )
+        }
+        {
+            !userSearch.length && <p className="text-center">Sorry, we can't find <b>{search}</b>, try another one</p>
         }
         </div>
     </div>
